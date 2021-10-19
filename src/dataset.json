@@ -1,0 +1,90 @@
+{
+  "init": {
+    "answers": [
+      { "content": "土地探しについて", "nextId": "job_offer" },
+      {
+        "content": "住宅について",
+        "nextId": "consultant"
+      },
+      { "content": "お金について", "nextId": "community" },
+      { "content": "とにかく相談したい", "nextId": "dating" }
+    ],
+    "question": "こんにちは！お家づくりに関して不安なことはなんでしょうか？"
+  },
+  "job_offer": {
+    "answers": [
+      { "content": "どうやって探せば良いのか", "nextId": "website" },
+      { "content": "土地にかける予算が分からない", "nextId": "webapp" },
+      { "content": "遠方での建築も可能かどうか", "nextId": "automation_tool" },
+      { "content": "その他", "nextId": "other_jobs" }
+    ],
+    "question": "どのようにお困りでしょうか？"
+  },
+  "website": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "お土地の探し方ですね。お客様によって何を基準に土地探しをすれば良いかは難しいですね。詳しくお伺いしたいので、良ければコチラからお問い合わせできます。"
+  },
+  "webapp": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "土地の予算についてですね。住宅には、建物価格・土地価格・諸費用の大きく3点が費用としてかかってきますので、間違うと予算オーバーになってしまう危険があります。詳しくお伺いしたいので、良ければコチラからお問い合わせできます。"
+  },
+  "automation_tool": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "遠方での建築は可能ですが、ハウスメーカーなどによってはできない会社様もあるので注意が必要です。詳しくお聞きしたい方は、コチラからお問い合わせできます。"
+  },
+  "other_jobs": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "その他についてですね。コチラからお問い合わせできます。"
+  },
+  "consultant": {
+    "answers": [
+      {
+        "content": "住宅選びの基準は？",
+        "nextId": "community_activity"
+      },
+      { "content": "住宅ってどれくらいの金額で建てれるの？", "nextId": "community" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "住宅についてですね。どんなことが知りたいですか？"
+  },
+  "community": {
+    "answers": [
+      { "content": "トータルでいくらかかるか想像がつかない", "nextId": "community_activity" },
+      {
+        "content": "住宅ローンについて",
+        "nextId": "https://www.jhf.go.jp/"
+      },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "お金についてですね。どんなことが知りたいですか？"
+  },
+  "community_activity": {
+    "answers": [
+      {
+        "content": "さらに詳細を知りたい",
+        "nextId": "contact"
+      },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "住宅には、建物価格・土地価格・諸費用の大きく3点が費用としてかかってきます。\nあとは家の大きさ、土地の価格でトータルの金額が変わってきますが、タマホームの建物金額は、1坪あたり50~60万円ほどになります。"
+  },
+  "dating": {
+    "answers": [
+      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "最初の質問に戻る", "nextId": "init" }
+    ],
+    "question": "コチラからお問い合わせできます"
+  }
+}
