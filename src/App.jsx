@@ -44,7 +44,6 @@ const App = () => {
   }
 
   const addChats = (chat) => {
-    /// prevChatsで、更新前のchatsも取得できる
     setChats(prevChats => {
       return [...prevChats, chat]
     })

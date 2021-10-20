@@ -6,7 +6,6 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 
-
 const FormDialog = (props) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -32,13 +31,13 @@ const FormDialog = (props) => {
         'お問い合わせ内容:\n' + description
     }
 
-    const url = 'https://hooks.slack.com/services/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'
+    const url = 'https://hooks.slack.com/services/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'
 
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(payload)
     }).then(() => {
-      alert('送信が完了しました！しばらくお待ちください')
+      alert('送信が完了しました！しばらくお待ちください。')
       setName("")
       setEmail("")
       setDescription("")
